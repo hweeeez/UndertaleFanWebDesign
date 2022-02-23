@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#accordion").accordion({
+            collapsible: true
+            , heightStyle: "content"
+            , active: false
+        });
+        $(".widget input[type=submit], .widget a, .widget button").button();
+        $("button, input, a").click(function (event) {
+            event.preventDefault();
+        });
+    })
+</script>
+<div id="accordion">
+    <h3>> Ba dum tss</h3>
+    <div>
+        <ul>
+            Looks like you had a rough day. But it's going tibia okay.
+        </ul>
+        <ul>
+            I have got a ton of work done today. A skele-ton.
+        </ul>
+        <ul>
+            A list of Sans' puns would be sans-tastic.
+        </ul>
+    </div>
+</div>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <ul>
+                    <href="default.asp">Game
+                </ul>
+            </li>
+            <li>
+                <href="Chars.asp">Characters
+                    <ul>
+                        <li><a href="Sans.html">Sans</a></li>
+                        <li><a href="Papyrus.html">Papyrus</a></li>
+                        <li><a href="Blooky.html">Napstablook</a></li>
+                        <li><a href="Toriel.html">Toriel</a></li>
+                        <li><a href="Asgore.html">Asgore</a></li>
+
+                    </ul>
+            </li>
+            <li>
+                <href="soundtrack.asp">Soundtrack
+                    <ul>
+                        <li><a href="#">Spotify</a></li>
+                        <li><a href="#">Bootcamp</a></li>
+                    </ul>
+            </li>
+            <li>
+                <href="about.asp">Developer
+            </li>
+        </ul>
+    </nav>
+    <header class = Sans>
+        <h1>Sans</h1>
+        <h2>I'm rootin' for ya, kid</h2>
+    </header>
+    <section class="info">
+        <h2>Info</h2>
+        <p>
+        <ul>Who:Skeleton</ul>
+        <ul>Location:Snowdin</ul>
+        <ul>Personality:Punny</ul>
+        </p>
+    </section>
+    <section class="Stats">
+
+        <h2>Stats</h2>
+        <p>
+        <ul>HP:1</ul>
+        <ul>AT:1</ul>
+        <ul>DF:1</ul>
+        </p>
+
+    </section>
+    <img src="images\Sans_Idle.gif" alt="Sans_idle" class="sans">
+
+    <div class="widget">
+        <!-- <button type="button" class="left_btn"><</button> -->
+        <button class="right_btn" onclick="location.href = 'Papyrus.html';" >></button>
+        <button class= "left_btn"onclick="location.href = 'Asgore.html';" ><</button>
+    </div>
+
+    <section class="clearfix"></section>
+
+    <footer>&copy;TobyFox</footer>
+
+</body>
+
+</html>

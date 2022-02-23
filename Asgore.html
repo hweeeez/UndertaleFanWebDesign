@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="stylesheet.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#accordion").accordion({
+            collapsible: true
+            , heightStyle: "content"
+            , active: false
+        });
+        $(".widget input[type=submit], .widget a, .widget button").button();
+        $("button, input, a").click(function (event) {
+            event.preventDefault();
+        });
+    })
+</script>
+
+<div id="accordion">
+    <h3>> Fight? </h3>
+    <div>
+        <ul>
+            Now, now.
+        </ul>
+        <ul>There's no need to fight. </ul>
+        <ul>Why not settle this... </ul>
+        <ul>Over a nice cup of tea?</ul>
+
+    </div>
+</div>
+<nav>
+    <ul>
+        <li>
+            <ul>
+                <href="default.asp">Game
+            </ul>
+        </li>
+        <li>
+            <href="Chars.asp">Characters
+                <ul>
+                    <li><a href="Sans.html">Sans</a></li>
+                    <li><a href="Papyrus.html">Papyrus</a></li>
+                    <li><a href="Blooky.html">Napstablook</a></li>
+                    <li><a href="Toriel.html">Toriel</a></li>
+                    <li><a href="Asgore.html">Asgore</a></li>
+
+                </ul>
+        </li>
+        <li>
+            <href="soundtrack.asp">Soundtrack
+                <ul>
+                    <li><a href="#">Spotify</a></li>
+                    <li><a href="#">Bootcamp</a></li>
+                </ul>
+        </li>
+        <li>
+            <href="about.asp">Developer
+        </li>
+    </ul>
+</nav>
+
+<body>
+
+    <header class=asgo>
+        <h1> Asgore</h1>
+        <h2>I just wanted everyone to have hope...</h2>
+    </header>
+    <img src="images\Asgore.png" alt="Asgore" class="Asg">
+    <section class="info">
+        <h2>Info</h2>
+        <p>
+        <ul>Who:Goat</ul>
+        <ul>Location:New Home</ul>
+        <ul>Personality:King</ul>
+            </p>
+    </section>
+    <section class="Stats">
+
+        <h2>Stats</h2>
+        <p>
+        <ul>HP:3500</ul>
+        <ul>AT:10-80</ul>
+        <ul>DF:-30-80</ul>
+        </p>
+    </section>
+    <div class="widget">
+        <!-- <button type="button" class="left_btn"><</button> -->
+        <button class="right_btn" onclick="location.href = 'Sans.html';">></button>
+        <button class="left_btn" onclick="location.href = 'Toriel.html';">
+            < </button>
+    </div>
+
+    <section class="clearfix"></section>
+    <footer>&copy;TobyFox</footer>
+    </section>
+
+
+
+
+
+    </html>

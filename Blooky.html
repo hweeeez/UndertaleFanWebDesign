@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="stylesheet.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#accordion").accordion({
+            collapsible: true
+            , heightStyle: "content"
+            , active: false
+        });
+        $(".widget input[type=submit], .widget a, .widget button").button();
+        $("button, input, a").click(function (event) {
+            event.preventDefault();
+        });
+        // $(document).ready(function () {
+        //     $('.left_btn').click(function () {
+        //         $(location).attr("href", "Sans"); // Put url to redirect
+        //     });
+        // });
+    })
+</script>
+<div id="accordion">
+    <h3>> NAPSTABLOOK22'S CDs</h3>
+    <div>
+        <ul>
+            <href="spooktune.asp">
+                </href>Spooktune
+        </ul>
+        <ul>
+            <href="spookwave.asp">
+                </href>Spookwave
+        </ul>
+        <ul>
+            <href="ghouliday.asp">
+                </href>Ghouliday
+        </ul>
+    </div>
+</div>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <ul>
+                    <href="default.asp">Game
+                </ul>
+            </li>
+            <li>
+                <href="Chars.asp">Characters
+                    <ul>
+                        <li><a href="Sans.html">Sans</a></li>
+                        <li><a href="Papyrus.html">Papyrus</a></li>
+                        <li><a href="Blooky.html">Napstablook</a></li>
+                        <li><a href="Toriel.html">Toriel</a></li>
+                        <li><a href="Asgore.html">Asgore</a></li>
+
+                    </ul>
+            </li>
+            <li>
+                <href="soundtrack.asp">Soundtrack
+                    <ul>
+                        <li><a href="#">Spotify</a></li>
+                        <li><a href="#">Bootcamp</a></li>
+                    </ul>
+            </li>
+            <li>
+                <href="about.asp">Developer
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>NAPSTABLOOK</h1>
+        <h2>Really not feelin up to it now... Sorry</h2>
+
+    </header>
+    <img src="images\Napstablook_battle_idle.gif" alt="Napstablook_battle_idle" class="idle">
+
+    <section class="info">
+        <h2>Info</h2>
+        <p>
+        <ul>Who:Ghost/DJ</ul>
+        <ul>Location:Waterfall</ul>
+        <ul>Personality:Insecure</ul>
+        </p>
+    </section>
+
+    <section class="Stats">
+
+        <h2>Stats</h2>
+        <p>
+        <ul>HP:88</ul>
+        <ul>AT:5-10</ul>
+        <ul>DF:4-10</ul>
+        </p>
+
+    </section>
+    <div class="widget">
+        <!-- <button type="button" class="left_btn"><</button> -->
+        <button class="right_btn"onclick="location.href = 'Toriel.html';">></button>
+        <button class= "left_btn" onclick="location.href = 'Papyrus.html';" ><</button>
+    </div>
+    <!-- <a class="ui-button ui-widget ui-corner-all" href="Sans"><</a> -->
+
+    <section class="clearfix"></section>
+
+    <footer>&copy;TobyFox</footer>
+</body>
+
+
+</html>
